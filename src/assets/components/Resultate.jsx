@@ -7,7 +7,14 @@ function Resultate({ results, isShow }) {
         Ви відповіли правильно на {results} із {Store.quiz.questions.length}{" "}
         запитань
       </h3>
-      <button className="quiz__selector" onClick={() => {location.reload()}}>Пройти ще раз</button>
+      <button
+        className="quiz__selector"
+        onClick={() => {
+          location.reload();
+        }}
+      >
+        Пройти ще раз
+      </button>
     </section>
   );
 }
